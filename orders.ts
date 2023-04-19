@@ -1,0 +1,88 @@
+import {gql} from "@apollo/client";
+
+export const ordersQuery = () =>{
+    const GET_ORDERS = gql`
+        query getOrders {
+            kus_orders {
+                id
+                addressee1
+                addressee2
+                addressee3
+                addressee4
+                agent_fee_garage_certificate_paper_fee
+                agent_fee_inspection_registration
+                agent_fee_trade_in
+                airbags_fee
+                auto_mobile_tax_amount
+                auto_mobile_tax_id
+                car_color_cost
+                car_color_id
+                car_color_name
+                car_color_price
+                car_grade_cost
+                car_grade_id
+                car_grade_name
+                car_grade_price
+                car_id
+                car_insurance_amount
+                car_insurance_id
+                car_model_id
+                car_model_name
+                car_name1
+                car_name2
+                car_shipping_fee
+                car_shipping_place_id
+                car_shipping_place_name
+                complete_car_cost
+                complete_car_id
+                complete_car_name
+                complete_car_price
+                consumption_tax
+                consumption_tax_id
+                created_at
+                customer_id
+                estimate_code
+                estimate_date
+                estimate_id
+                free_recycling_fee1
+                free_recycling_fee2
+                free_recycling_fee3
+                free_recycling_title1
+                free_recycling_title2
+                free_recycling_title3
+                freons_fee
+                information_management_fee
+                legal_fee_garage_certificate_paper_fee
+                legal_fee_inspection_registration
+                legal_fee_trade_in
+                number_fee
+                number_registration_location_id
+                number_registration_location_name
+                postal_code
+                recycling_deposit_fee
+                recycling_fund_management_fee
+                recycling_total_fee
+                registration_fee
+                selective_number_fee
+                shipping_fee
+                shredder_dust_fee
+                stamp_duty
+                tax_by_environmental_performances_amount
+                tax_by_environmental_performances_id
+                tax_by_environmental_performances_tax_ratio
+                tax_exempt_expenses
+                taxable_expenses
+                total_cost
+                total_expenses
+                total_fee
+                total_structural_procedure_fee
+                updated_at
+                weight_tax_id
+                weight_tax_price
+            }
+        }
+    `
+    return {
+        GET_ORDERS
+    }
+}
